@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Symfony\Component\Mime\Part\TextPart;
+
 
 use App\Models\Subscription;
 
@@ -29,16 +31,15 @@ class ContactController extends Controller
         ]);
 
         Mail::send([], [], function ($message) use ($data) {
-            $message->to('billarajinikar@gmail.com')
-                    ->subject('Contact Us Message from nrily')
-                    ->setBody(
-                        "Name: {$data['name']}\n".
-                        "Email: {$data['email']}\n".
-                        "Phone: {$data['number']}\n".
-                        "Message:\n{$data['message']}",
-                        'text/plain'
-                    );
-        });
+        $body = "Name: {$data['name']}\n"
+              . "Email: {$data['email']}\n"
+              . "Phone: {$data['number']}\n"
+              . "Message:\n{$data['message']}";
+
+        $message->to('billarajinikar@gmail.com')
+                ->subject('Contact Us Message from nrily')
+                ->setBody(new TextPart($body));
+    });
 
         return response()->json(['status' => 'success']);
     }
