@@ -32,7 +32,7 @@ class ContactController extends Controller
             $message->to('billarajinikar@gmail.com')
                     ->subject('Contact Us Message from nrily')
                     ->setBody(
-                        "Name: {$data['text']}\n".
+                        "Name: {$data['name']}\n".
                         "Email: {$data['email']}\n".
                         "Phone: {$data['number']}\n".
                         "Message:\n{$data['message']}",

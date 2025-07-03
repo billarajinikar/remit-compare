@@ -36,7 +36,7 @@
                                 <input type="text" class="form-control" placeholder="Name" name="name" required>
                                 <input type="email" class="form-control" placeholder="Email address" name="email" required>
                                 <input type="text" class="form-control" placeholder="Phone number" name="number">
-                                <textarea class="input-field borderd textarea" rows="3" name="message" placeholder="Message"
+                                <textarea class="input-field  textarea" rows="3" name="message" placeholder="Message"
                                     required></textarea>
                                 <button type="submit">Submit Message</button>
                             </form>
