@@ -27,15 +27,7 @@
                         <div class="partner-img">
                             <img src="/assets/providers/{{ $rate->provider->main_logo }}" alt="">
                         </div>
-                        <p class="text">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            (42,223 Reviews)
-                        </p>
-                        <a href="review.html" class="link">Learn more >></a>
+
                     </div>
                     <div class="content">
                         <div class="pament-box">
@@ -54,7 +46,6 @@
                         </div>
 
                         <div class="free-transfer">
-                            <img src="assets/img/free-trns.png" alt="" class="free-icon">
                             <p class="text">New customers get first 3 transfers fee FREE</p>
                         </div>
                     </div>

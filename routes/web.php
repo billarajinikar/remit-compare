@@ -5,9 +5,8 @@ use App\Http\Controllers\JobController;
 use App\Http\Controllers\RemittanceController;
 use App\Http\Controllers\ContactController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [RemittanceController::class, 'index'])->name('remittance.index');
+
 
 Route::get('/sample',[JobController::class, 'storeRatesFromMonito']);
 
