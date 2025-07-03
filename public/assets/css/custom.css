@@ -9,3 +9,12 @@
 .contact.hero-area {
     padding: 87px 0 0px !important;
 }
+.text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000 !important;
+    margin-bottom: 10px;
+}
+.title{
+    color: #000 !important;
+}

@@ -31,19 +31,57 @@
                                     {{ session('success') }}
                                 </div>
                             @endif
-                            <form action="{{ route('contact.submit') }}" method="POST">
+                            <form id="contactForm" action="{{ route('contact.submit') }}" method="POST">
                                 @csrf
-                                <input type="text" class="form-control" placeholder="Name" name="text">
-                                <input type="email" class="form-control" placeholder="Email address" name="email">
+                                <input type="text" class="form-control" placeholder="Name" name="name" required>
+                                <input type="email" class="form-control" placeholder="Email address" name="email" required>
                                 <input type="text" class="form-control" placeholder="Phone number" name="number">
-                                <textarea class="input-field borderd textarea" rows="3" id="message" placeholder="Message"
-                                    required=""></textarea>
+                                <textarea class="input-field borderd textarea" rows="3" name="message" placeholder="Message"
+                                    required></textarea>
                                 <button type="submit">Submit Message</button>
                             </form>
+
+                            <div id="contactSuccess" class="alert alert-success mt-3 d-none">
+                                ✅ Your message has been sent successfully!
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent normal form submission
+
+        const form = e.target;
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                'Accept': 'application/json'
+            },
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) throw new Error('Submission failed');
+            return response.json();
+        })
+        .then(data => {
+            // Clear form
+            form.reset();
+
+            // Show success message
+            document.getElementById('contactSuccess').classList.remove('d-none');
+        })
+        .catch(error => {
+            alert('Oops! Something went wrong. Please try again.');
+            console.error(error);
+        });
+    });
+</script>
+
 @endsection

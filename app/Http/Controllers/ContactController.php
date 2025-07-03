@@ -22,7 +22,7 @@ class ContactController extends Controller
     public function submit(Request $request)
     {
         $data = $request->validate([
-            'text' => 'required|string|max:255',
+            'name' => 'required|string|max:255',
             'email' => 'required|email',
             'number' => 'nullable|string|max:20',
             'message' => 'required|string',
@@ -40,7 +40,7 @@ class ContactController extends Controller
                     );
         });
 
-        return back()->with('success', 'Thank you for contacting us!');
+        return response()->json(['status' => 'success']);
     }
 
 public function subscribe(Request $request)
