@@ -8,6 +8,7 @@ use Symfony\Component\Mime\Part\TextPart;
 
 
 use App\Models\Subscription;
+use DB;
 
 class ContactController extends Controller
 {
@@ -28,6 +29,14 @@ class ContactController extends Controller
             'email' => 'required|email',
             'number' => 'nullable|string|max:20',
             'message' => 'required|string',
+        ]);
+
+        DB::table('contact_messages')->insert([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'number' => $data['number'],
+            'message' => $data['message'],
+            'created_at' => now(),
         ]);
 
         Mail::send([], [], function ($message) use ($data) {
