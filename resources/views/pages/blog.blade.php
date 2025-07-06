@@ -1,0 +1,60 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="hcontent">
+                        <h3 class="subtitle">Remittance & Money Transfer Guide</h3>
+                        <h2 class="title">Read our guides on sending money abroad</h2>
+                        <p class="text">
+                            Tips and Advice For Sending Money Overseas
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-box">
+                        <div class="imgg">
+                            <img src="/assets/template-img/blog-1.png" alt="" class="blog-img">
+                        </div>
+                        <div class="text-box">
+                            <a href="#" class="blog-title">
+                                Top 5 Remittance Services for Sending Money from Sweden to India
+                            </a>
+                            <span class="date">July 1st, 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-box">
+                        <div class="imgg">
+                            <img src="/assets/template-img/blog-2.png" alt="" class="blog-img">
+                        </div>
+                        <div class="text-box">
+                            <a href="#" class="blog-title">
+                                How NRI’s in Sweden Can Build a Solid Financial Future in India
+                            </a>
+                            <span class="date">July 2, 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-box">
+                        <div class="imgg">
+                            <img src="/assets/template-img/blog-3.png" alt="" class="blog-img">
+                        </div>
+                        <div class="text-box">
+                            <a href="#" class="blog-title">
+                                A Smart NRI’s Guide to Saving Money While Living in Sweden
+                            </a>
+                            <span class="date">July 3, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+@endsection

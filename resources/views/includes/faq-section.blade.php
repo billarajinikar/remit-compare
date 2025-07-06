@@ -9,7 +9,7 @@
                     <div class="content">
                         <h3 class="subtitle">How Can We Help?</h3>
                         <h2 class="title"> Frequently Asked Questions</h2>
-                        <p class="text">Everything you need to know about Comofer</p>
+                        <p class="text">Everything you need to know about nrily</p>
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -19,17 +19,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <img src="/assets/template-img/faq-icon.png" alt="" class="icon">
-                                    How can I use Comofer to find the best ways to send money?
+                                    What does nrily.com do?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Comofer is currently serviced in Belgium, Canada, Denmark, Finland, France, Germany,
-                                    Ireland, Italy, Netherlands, Norway, Spain,
-                                    Sweden, United Kingdom and the United States. We will update you when we expand the
-                                    list. CPP for AppTig console only allows players from other consoles to play
-                                    together in the same matchmaking pools.
+                                    NRIly is a remittance comparison platform that helps users find the best money transfer services from Sweden (and soon other countries) to India. We compare exchange rates, transfer fees, and estimated delivery times to help you save money.
                                 </div>
                             </div>
                         </div>
@@ -38,17 +34,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <img src="/assets/template-img/faq-icon.png" alt="" class="icon">
-                                    How can I use Comofer to find the best ways to send money?
+                                    Are the exchange rates and fees shown in real-time?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Comofer is currently serviced in Belgium, Canada, Denmark, Finland, France, Germany,
-                                    Ireland, Italy, Netherlands, Norway, Spain,
-                                    Sweden, United Kingdom and the United States. We will update you when we expand the
-                                    list. CPP for AppTig console only allows players from other consoles to play
-                                    together in the same matchmaking pools.
+                                    The rates and fees displayed on nrily.com are updated frequently, but they may differ slightly from the final rate offered by the provider at the time of your transaction. Always confirm the exact rate on the provider's official website before completing a transfer.
                                 </div>
                             </div>
                         </div>
@@ -57,17 +49,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <img src="/assets/template-img/faq-icon.png" alt="" class="icon">
-                                    How can I use Comofer to find the best ways to send money?
+                                    Does nrily charge any fees for using the comparison service?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Comofer is currently serviced in Belgium, Canada, Denmark, Finland, France, Germany,
-                                    Ireland, Italy, Netherlands, Norway, Spain,
-                                    Sweden, United Kingdom and the United States. We will update you when we expand the
-                                    list. CPP for AppTig console only allows players from other consoles to play
-                                    together in the same matchmaking pools.
+                                    No, nrily.com is completely free to use. We do not charge any fees. Some of the links on our website may be affiliate links, which means we may earn a small commission if you choose a provider through our site — at no extra cost to you.
                                 </div>
                             </div>
                         </div>
@@ -76,17 +64,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <img src="/assets/template-img/faq-icon.png" alt="" class="icon">
-                                    How can I use Comofer to find the best ways to send money?
+                                    Is it safe to use nrily to compare money transfer services?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Comofer is currently serviced in Belgium, Canada, Denmark, Finland, France, Germany,
-                                    Ireland, Italy, Netherlands, Norway, Spain,
-                                    Sweden, United Kingdom and the United States. We will update you when we expand the
-                                    list. CPP for AppTig console only allows players from other consoles to play
-                                    together in the same matchmaking pools.
+                                    Yes. We do not process transactions ourselves. Instead, we redirect you to trusted remittance providers. You deal directly with them, ensuring your transaction remains secure and private.
                                 </div>
                             </div>
                         </div>
@@ -95,17 +79,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     <img src="/assets/template-img/faq-icon.png" alt="" class="icon">
-                                    How can I use Comofer to find the best ways to send money?
+                                    Why is there a difference between the estimated and actual amount received?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Comofer is currently serviced in Belgium, Canada, Denmark, Finland, France, Germany,
-                                    Ireland, Italy, Netherlands, Norway, Spain,
-                                    Sweden, United Kingdom and the United States. We will update you when we expand the
-                                    list. CPP for AppTig console only allows players from other consoles to play
-                                    together in the same matchmaking pools.
+                                    Exchange rates and fees may fluctuate between the time you view them on nrily and when you complete the transfer. Also, additional fees may apply depending on the payment method or receiving bank. Always check final amounts with the provider before confirming.
                                 </div>
                             </div>
                         </div>
@@ -114,17 +94,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     <img src="/assets/template-img/faq-icon.png" alt="" class="icon">
-                                    How can I use Comofer to find the best ways to send money?
+                                    Can I use nrily.com to compare other services too?
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Comofer is currently serviced in Belgium, Canada, Denmark, Finland, France, Germany,
-                                    Ireland, Italy, Netherlands, Norway, Spain,
-                                    Sweden, United Kingdom and the United States. We will update you when we expand the
-                                    list. CPP for AppTig console only allows players from other consoles to play
-                                    together in the same matchmaking pools.
+                                    Right now, we focus on comparing remittance transfers. In the future, we plan to expand and include comparisons for other services relevant to NRIs — such as NRI bank accounts, investment options, and more.
                                 </div>
                             </div>
                         </div>

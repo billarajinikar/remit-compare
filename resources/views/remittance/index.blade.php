@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+@php
+    $topProviders = ['wise']; // Add more provider names here (lowercase)
+@endphp
 <div class="container main-content">
     <h2 class="mb-4">Compare SEK to INR Remittance Rates</h2>
     @include('includes.search-form')
@@ -21,7 +24,9 @@
                 @foreach ($rates as $rate)
                 <div class="provaider-box">
                     <div class="ribbon">
-                        <img src="/assets/template-img/ribbon.png" class="ribbon-img" alt="">
+                        @if(in_array(strtolower($rate->provider->name), $topProviders))
+    <img src="/assets/template-img/ribbon.png" class="ribbon-img" alt="Wise Ribbon">
+@endif
                     </div>
                     <div class="rating" style="background: url('/assets/template-img/partner-bg.png');">
                         <div class="partner-img">
@@ -34,8 +39,7 @@
                             <div class="pament">
                                 <p class="text">Payment Options</p>
                                 <div class="cradit-card">
-                                    <p class="text"><img src="/assets/tempalte-img/card.png" alt=""> <span>Debit /Credit Card</span></p>
-                                    <p class="text"><img src="/assets/tempalte-img/bank.png" alt=""> <span>Direct Bank Transfers</span></p>
+                                    <p class="text"> <span>{!! $rate->provider->payment_options !!}</span></p>
                                 </div>
                             </div>
                             <div class="exchange">
@@ -46,7 +50,7 @@
                         </div>
 
                         <div class="free-transfer">
-                            <p class="text">New customers get first 3 transfers fee FREE</p>
+                            <p class="text">{!! $rate->provider->notes !!}</p>
                         </div>
                     </div>
                     <div class="total">

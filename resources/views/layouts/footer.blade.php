@@ -31,13 +31,17 @@
                 <div class="col-lg-9">
                     <div class="footer-box">
                         <ul class="footer-link">
-                            <li><a href="#">About us</a></li>
-                            <li>|</li>
-                            <li><a href="">How it works</a></li>
-                            <li>|</li>
                             <li><a href="">FAQ</a></li>
                             <li>|</li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li>|</li>
                             <li><a href="/contact-us">Contact</a></li>
+                            <li>|</li>
+                            <li><a href="{{ route('terms') }}">Terms & Conditions</a></li>
+                            <li>|</li>
+                            <li><a href="{{ route('privacy') }}">Privacy policy</a></li>
+                            <li>|</li>
+
                         </ul>
                     </div>
                 </div>

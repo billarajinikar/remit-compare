@@ -14,14 +14,45 @@ class RemittanceController extends Controller
     }
 
     public function search(Request $request)
-    {
-        $amount = $request->input('amount', 1000);
+{
+    $amount = (float) $request->input('amount', 1000);
 
-        $rates = RemittanceRate::with('provider')
-            ->where('base_amount', $amount)
-            ->orderByDesc('received_amount')
-            ->get();
+    // Step 1: Get the closest base_amount stored
+    $closestBaseAmount = RemittanceRate::select('base_amount')
+        ->distinct()
+        ->orderByRaw("ABS(base_amount - ?)", [$amount])
+        ->limit(1)
+        ->value('base_amount');
 
-        return view('remittance.index', compact('rates', 'amount'));
+    if (!$closestBaseAmount) {
+        return view('remittance.index', ['rates' => [], 'amount' => $amount]);
     }
+
+    // Step 2: Fetch all rates for that closest base_amount
+    $baseRates = RemittanceRate::with('provider')
+        ->where('base_amount', $closestBaseAmount)
+        ->orderByDesc('received_amount')
+        ->get();
+
+    // Step 3: Calculate estimated fee & receivedAmount for user-entered amount
+    $rates = $baseRates->map(function ($rate) use ($amount, $closestBaseAmount) {
+        $ratePerSEK = $rate->rate;
+        $fee = $rate->fee; // we assume fee is roughly same for nearby amounts
+
+        $estReceived = ($amount - $fee) * $ratePerSEK;
+
+        return (object)[
+            'provider'        => $rate->provider,
+            'base_amount'     => $amount,
+            'rate'            => $ratePerSEK,
+            'fee'             => $fee,
+            'received_amount' => round($estReceived, 2),
+            'transfer_time'   => $rate->transfer_time,
+            'affiliate_url'   => $rate->affiliate_url,
+        ];
+    });
+
+    return view('remittance.index', compact('rates', 'amount'));
+}
+
 }
