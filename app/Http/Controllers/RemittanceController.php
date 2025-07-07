@@ -52,6 +52,10 @@ class RemittanceController extends Controller
         ];
     });
 
+    if ($request->ajax()) {
+        return view('includes.rates', compact('rates', 'amount'))->render();
+    }
+
     return view('remittance.index', compact('rates', 'amount'));
 }
 

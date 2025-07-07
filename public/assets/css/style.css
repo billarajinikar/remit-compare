@@ -1278,6 +1278,35 @@ p.text {
   color: #fff;
 }
 
+.secure-badge .secure {
+  background: linear-gradient(to right, #fce6ff 1%, #ecefff 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 30px 5px;
+}
+.secure-badge .secure .sucure-icon {
+  margin-right: 30px;
+}
+.secure-badge .secure p.text {
+  color: #292669;
+  font-weight: 500;
+}
+.secure-badge .secure p.text a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #292669;
+  text-decoration: underline;
+}
+.secure-badge .secure p.text a:hover {
+  text-decoration: none;
+}
+
+
+
 /* Provaider Start */
 .provaider {
   padding: 40px 0 60px;

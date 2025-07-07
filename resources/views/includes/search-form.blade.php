@@ -19,7 +19,7 @@
 </style>
 
 <div class="bg-white border rounded-3 p-4 shadow-sm mb-4">
-    <form action="{{ route('remittance.search') }}" method="GET">
+    <form action="{{ route('remittance.search') }}" method="GET" id="search-form">
         <div class="row g-3 align-items-end">
 
             <!-- Spacer -->
