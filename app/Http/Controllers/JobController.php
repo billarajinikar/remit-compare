@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use App\Models\Provider;
+use App\Models\MonitoRawResponse;
 class JobController extends Controller
 {
     public function sample()
@@ -61,7 +62,6 @@ class JobController extends Controller
     }
     public function storeRatesFromMonito()
     {
-        $baseAmount1 = 13000;
         $baseAmounts = [100, 200, 400, 500, 1000, 2000, 3000, 5000, 10000, 11000, 12000, 15000, 18000, 20000, 25000, 30000, 35000, 40000, 50000, 75000, 100000];
         foreach ($baseAmounts as $baseAmount) {
             $response = Http::withHeaders([
@@ -105,12 +105,15 @@ class JobController extends Controller
                     ]);
 
             $quotes = $response->json('data.results.providerQuotes');
-
+            MonitoRawResponse::updateOrCreate(
+                ['base_amount' => $baseAmount],
+                ['raw_json' => json_encode($response->json())]
+            );
             if (!$quotes) {
                 return response()->json(['error' => 'No quotes found'], 500);
             }
 
-            foreach ($quotes as $providerQuote) {
+            /* foreach ($quotes as $providerQuote) {
                 $providerName = $providerQuote['psp']['name'];
                 $affiliateUrl = $providerQuote['psp']['affiliateUrl'] ?? null;
 
@@ -140,11 +143,52 @@ class JobController extends Controller
                         'fetched_at' => now(),
                     ]
                 );
-            }
+            } */
         }
 
         return response()->json(['message' => 'Only first quotes saved for each provider.']);
     }
+    public function processMonitoRawToRates()
+    {
+        $records = MonitoRawResponse::all();
+
+        foreach ($records as $record) {
+            $data = json_decode($record->raw_json, true);
+            $quotes = $data['data']['results']['providerQuotes'] ?? [];
+
+            foreach ($quotes as $providerQuote) {
+                $providerName = $providerQuote['psp']['name'];
+                $affiliateUrl = $providerQuote['psp']['affiliateUrl'] ?? null;
+
+                $provider = Provider::where('name', $providerName)->first();
+                if (!$provider || empty($providerQuote['quotes']))
+                    continue;
+
+                $quote = $providerQuote['quotes'][0];
+
+                DB::table('remittance_rates')->updateOrInsert(
+                    [
+                        'provider_id' => $provider->id,
+                        'base_amount' => $record->base_amount,
+                        'from_currency' => 'SEK',
+                        'to_currency' => 'INR',
+                        'from_country' => 'SE',
+                    ],
+                    [
+                        'rate' => $quote['rate'],
+                        'fee' => $quote['fee']['total'],
+                        'received_amount' => $quote['receivedAmount'],
+                        'transfer_time' => $quote['transferTime']['min'] . '-' . $quote['transferTime']['max'],
+                        'affiliate_url' => $affiliateUrl,
+                        'fetched_at' => now(),
+                    ]
+                );
+            }
+        }
+
+        return response()->json(['message' => 'Rates processed from raw Monito data.']);
+    }
+
 
 
 

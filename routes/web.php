@@ -8,7 +8,10 @@ use App\Http\Controllers\ContactController;
 Route::get('/', [RemittanceController::class, 'index'])->name('remittance.index');
 
 
-Route::get('/sample',[JobController::class, 'storeRatesFromMonito']);
+Route::get('/sample',action: [JobController::class, 'storeRatesFromMonito']);
+Route::get('/process',action: [JobController::class, 'processMonitoRawToRates']);
+
+
 
 Route::get('/contact-us', function () {
     return view('pages.contact');
