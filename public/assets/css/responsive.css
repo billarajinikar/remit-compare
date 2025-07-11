@@ -66,25 +66,25 @@
 		width: 30%;
 	}
 	.banner.contact .bubble .bubble-img,
-	.banner.guides .bubble .bubble-img {  
-		right: 10%; 
+	.banner.guides .bubble .bubble-img {
+		right: 10%;
 		width: 36%;
 	}
-	.prosandcoin .shap .pors-shap { 
+	.prosandcoin .shap .pors-shap {
 		top: -57%;
 		left: -5%;
-		width: 48%; 
+		width: 48%;
 	}
-	.testomonial.man .sape .test-sape { 
+	.testomonial.man .sape .test-sape {
 		top: -11%;
 		left: 17%;
-		width: 36%; 
+		width: 36%;
 	}
-	.testomonial.man .man-testo .man-pic { 
+	.testomonial.man .man-testo .man-pic {
 		top: -1%;
-		left: 6%; 
+		left: 6%;
 	}
-	.testomonial .sape .test-sape { 
+	.testomonial .sape .test-sape {
 		left: 15%;
 		width: 42%;
 	}
@@ -141,31 +141,31 @@
 		width: 33%;
 	}
 	.banner.about-us .hero-area .phone-coin .phone-lock {
-		right: 3%; 
+		right: 3%;
 		width: 30%;
 	}
-	.mission .mission-img .mission-pic { 
+	.mission .mission-img .mission-pic {
 		width: 31%;
 	}
-	.testomonial .sape .test-sape { 
+	.testomonial .sape .test-sape {
 		top: 0%;
 		left: 10%;
 		width: 47%;
 	}
-	.testomonial .test-girl .girl-pic { 
+	.testomonial .test-girl .girl-pic {
 		top: 22%;
-		left: 1%; 
+		left: 1%;
 	}
-	.testomonial .phone .right-phone { 
-		right: 10%; 
+	.testomonial .phone .right-phone {
+		right: 10%;
 		width: 26%;
 	}
 	.banner.contact .bubble .bubble-img,
-	.banner.guides .bubble .bubble-img { 
-		right: 4%; 
+	.banner.guides .bubble .bubble-img {
+		right: 4%;
 		width: 34%;
-	} 
-	.testomonial.man .sape .test-sape { 
+	}
+	.testomonial.man .sape .test-sape {
 		top: -19%;
 		left: 11%;
 		width: 40%;
@@ -246,10 +246,10 @@
 	.banner.about-us .hero-area .phone-coin .phone-lock {
 		width: 42%;
 	}
-	.testomonial .test-girl .girl-pic { 
+	.testomonial .test-girl .girl-pic {
 		display: none;
 	}
-	.testomonial .sape .test-sape { 
+	.testomonial .sape .test-sape {
 		left: 2%;
 		width: 53%;
 	}
@@ -298,22 +298,22 @@
 		margin-right: 30px;
 	}
 	.provaider .provaider-box .content .pament-box .pament:after {
-		right: 0%; 
+		right: 0%;
 	}
 	.testomonial.man .sape .test-sape,
 	.prosandcoin .shap .pors-shap{
 		display: none;
 	}
-	.banner.review .hero-area .review-img .review-pic { 
-		top: 18%; 
+	.banner.review .hero-area .review-img .review-pic {
+		top: 18%;
 		width: 42%;
 	}
 	.rate-tracker .rate-details .rate-box.four .box .form-box .textnum.date {
-		margin-left: 0px; 
-		-ms-flex-wrap: wrap; 
+		margin-left: 0px;
+		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
 	}
-	.rate-tracker .rate-details .subscribe-box .form-control { 
+	.rate-tracker .rate-details .subscribe-box .form-control {
 		width: 100%;
 	}
 
@@ -325,7 +325,7 @@
 		line-height: 55px;
 	}
 	h2.title {
-		font-size: 38px;
+		font-size: 22px;
 		line-height: 48px
 	}
 	.mein-menu {
@@ -346,10 +346,10 @@
 		overflow: auto;
 	}
 	.banner .mein-menu .navbar #navbarNavDropdown ul.navbar-nav {
-		margin-left: auto; 
-		-webkit-box-align: start; 
-		    -ms-flex-align: start; 
-		            -ms-grid-row-align: flex-start; 
+		margin-left: auto;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		            -ms-grid-row-align: flex-start;
 		        align-items: flex-start;
 	}
 	.banner .mein-menu .navbar #navbarNavDropdown ul.navbar-nav li.nav-item {
@@ -403,7 +403,7 @@
 	.users .total-content .content p.text {
 		padding: 0 0 0;
 	}
-	.update .phone { 
+	.update .phone {
 		margin-bottom: 30px;
 	}
 	.about .about-photo .about-img {
@@ -490,27 +490,27 @@
 		padding: 30px 20px 30px;
 	}
 
-	.provaider .provaider-box { 
-		-webkit-box-orient: vertical; 
-		-webkit-box-direction: normal; 
-		    -ms-flex-direction: column; 
-		        flex-direction: column; 
+	.provaider .provaider-box {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
-	.provaider .provaider-box .content .free-transfer { 
-		-webkit-box-pack: center; 
-		    -ms-flex-pack: center; 
-		        justify-content: center; 
+	.provaider .provaider-box .content .free-transfer {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 	.banner.contact .hero-area .hero-form.contact{
 		margin-bottom: 0;
 	}
 	.banner.review .hero-area {
-		padding: 200px 0 120px; 
+		padding: 200px 0 120px;
 	}
-	.provaider .provaider-box .total { 
-		margin: 10px 0 0 0; 
+	.provaider .provaider-box .total {
+		margin: 10px 0 0 0;
 		padding: 30px 60px 30px;
-	} 
+	}
 	.banner.compare .hero-area,
 	.banner.contact .hero-area,
 	.banner.guides .hero-area {
@@ -526,7 +526,7 @@
 	.banner.guides .hero-area .hero-form {
 		margin-bottom: 0px;
 	}
-	.provaider .provaider-box .ribbon .ribbon-img { 
+	.provaider .provaider-box .ribbon .ribbon-img {
 		width: 12%;
 	}
 	.banner.review .hero-area .review-img .review-pic{
@@ -534,12 +534,12 @@
 	}
 	.overview .main-box,
 	.prosandcoin .cons {
-		margin-top: 30px; 
+		margin-top: 30px;
 	}
 	.really-easy .use-box{
-		margin-top: 40px; 
+		margin-top: 40px;
 	}
-	.really-easy .use-box .img span { 
+	.really-easy .use-box .img span {
 		left: 25%;
 	}
 	.testomonial.man .hcontent{
@@ -551,17 +551,17 @@
 	}
 	.blog .blog-box .text-box {
 		position: relative;
-		margin: -30px 20px 30px 20px; 
+		margin: -30px 20px 30px 20px;
 	}
 	.blog {
 		padding: 114px 0 90px;
 	}
 	.rate-tracker .rate-details .rate-box.four .box .form-box,
 	.rate-tracker .rate-details .rate-box.one,
-	.rate-tracker .rate-details .subscribe-box { 
-		-ms-flex-wrap: wrap; 
-		    flex-wrap: wrap; 
-	}  
+	.rate-tracker .rate-details .subscribe-box {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
 	.rate-tracker .rate-details .rate-box.one .country{
 		width: auto;
 	}
@@ -596,17 +596,17 @@
 	}
 	.update .phone .phone-img {
 		width: 85%;
-	} 
-	.about .content .compare-box { 
-		-webkit-box-align: self-start; 
-		    -ms-flex-align: self-start; 
-		            -ms-grid-row-align: self-start; 
-		        align-items: self-start; 
 	}
-	.about .content .compare-box .text-box p.text { 
+	.about .content .compare-box {
+		-webkit-box-align: self-start;
+		    -ms-flex-align: self-start;
+		            -ms-grid-row-align: self-start;
+		        align-items: self-start;
+	}
+	.about .content .compare-box .text-box p.text {
 		padding: 22px 0px 0 0;
 	}
-	.update .alert-box .icon { 
+	.update .alert-box .icon {
 		width: 40%;
 	}
 	.mission .mission-img .mission-pic {
@@ -621,7 +621,7 @@
 	.rate-tracker .rate-details .rate-box.three .form-box .form-group {
 		margin-right: 0px;
 	}
-	.rate-tracker .rate-details .rate-box.one .country, 
+	.rate-tracker .rate-details .rate-box.one .country,
 	.rate-tracker .rate-details .rate-box.one p.text.value,
 	.rate-tracker .rate-details .subscribe-box button.button-1,
 	.rate-tracker .rate-details .subscribe-box .form-control,
@@ -640,11 +640,11 @@
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
-		        flex-direction: column; 
-		-webkit-box-align: start; 
-		    -ms-flex-align: start; 
-		        align-items: flex-start;  
-	} 
+		        flex-direction: column;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+	}
 	.rate-tracker .rate-details .rate-box label {
 		display: inline;
 	}
@@ -670,17 +670,17 @@
 	}
 	.update .phone .phone-img {
 		width: 70%;
-	} 
+	}
 	.how-use .content {
 		margin-top: 60px;
 	}
-	.how-use .video-box { 
+	.how-use .video-box {
 		top: 27%;
 	}
-	.update .alert-box { 
-		-webkit-box-orient: vertical; 
-		-webkit-box-direction: normal; 
-		    -ms-flex-direction: column; 
+	.update .alert-box {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
 		        flex-direction: column;
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
@@ -707,7 +707,7 @@
 	.footer .subcribe-box .form-group button.button-1{
 		max-width: 150px;
 	}
-	.footer .subcribe-box .form-group .form-control { 
+	.footer .subcribe-box .form-group .form-control {
 		padding: 0px 155px 0px 24px;
 	}
 	.provaider .secure,
@@ -715,11 +715,11 @@
 	.provaider .provaider-box .content .pament-box,
 	.provaider .provaider-box .content .free-transfer,
 	.guides-detail .content .profile,
-	.banner.contact .hero-area .contact-info  { 
-		-webkit-box-orient: vertical; 
-		-webkit-box-direction: normal; 
-		    -ms-flex-direction: column; 
-		        flex-direction: column; 
+	.banner.contact .hero-area .contact-info  {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	.provaider .secure .sucure-icon,
 	.provaider .provaider-box .content .free-transfer .free-icon {
@@ -735,7 +735,7 @@
 	}
 	.banner.contact .hero-area .contact-info .info-box.one {
 		margin: 0px 0px 30px ;
-	} 
+	}
 	.guides-detail .content .profile .date:after{
 		display: none;
 	}
@@ -743,10 +743,10 @@
 		margin: 0px 0px 15px;
 		padding: 0;
 	}
-	.guides-detail .content .profile { 
-		-webkit-box-align: start; 
-		    -ms-flex-align: start; 
-		            -ms-grid-row-align: flex-start; 
+	.guides-detail .content .profile {
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		            -ms-grid-row-align: flex-start;
 		        align-items: flex-start;
 	}
 	.rate-tracker .rate-details .subscribe-box .form-control,
@@ -821,10 +821,10 @@
 		top: 24%;
 	}
 	.about .content .compare-box,
-	.about .content .compare-box, .feature .feature-box { 
-		-webkit-box-orient: vertical; 
-		-webkit-box-direction: normal; 
-		    -ms-flex-direction: column; 
+	.about .content .compare-box, .feature .feature-box {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
 		        flex-direction: column;
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
@@ -832,18 +832,18 @@
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		            -ms-grid-row-align: center;
-		        align-items: center; 
+		        align-items: center;
 	}
-	.how-use .video-box { 
-		width: 334px;  
+	.how-use .video-box {
+		width: 334px;
 		top: 21%;
-		 
+
 	}
-	.how-use .use-box .install { 
-		-webkit-box-orient: vertical; 
-		-webkit-box-direction: normal; 
-		    -ms-flex-direction: column; 
-		        flex-direction: column; 
+	.how-use .use-box .install {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	.how-use .use-box .install .text-box {
 		margin-left: 0px;
@@ -854,7 +854,7 @@
 	.testomonial .testo-box:after,
 	.testomonial .testo-box:before,
 	.testomonial .testo-box:after
-	 { 
+	 {
 		font-size: 40px;
 	}
 	.feature-box .featureimg .pic.left,
@@ -864,10 +864,10 @@
 		width: 100%;
 	}
 }
- 
+
 @media (max-width: 360px) {
 	.how-use .video-box {
-		width: 335px; 
+		width: 335px;
 		top: 18%;
 	}
 	.how-use .content {
@@ -883,17 +883,17 @@
 	.really-easy .use-box .img span {
 		left: 6%;
 	}
-	.really-easy .button-box { 
-		-webkit-box-orient: vertical; 
-		-webkit-box-direction: normal; 
-		    -ms-flex-direction: column; 
-		        flex-direction: column; 
+	.really-easy .button-box {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
-	.really-easy .button-box a.button.button-1 { 
-		margin: 0px 0pc 30px; 
+	.really-easy .button-box a.button.button-1 {
+		margin: 0px 0pc 30px;
 	}
-	.testomonial .testo-box a.button { 
-		width: 178px; 
+	.testomonial .testo-box a.button {
+		width: 178px;
 	}
 
 }
