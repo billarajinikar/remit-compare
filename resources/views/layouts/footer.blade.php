@@ -25,13 +25,13 @@
             <div class="row align-items-center">
                 <div class="col-lg-3">
                     <div class="footer-box">
-                        <a href="#"><img class="logo" src="/assets/template-img/logo.png" alt=""> </a>
+                        <a href="#"><img class="logo" src="/assets/template-img/pravasify_logo1.png" alt=""> </a>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <div class="footer-box">
                         <ul class="footer-link">
-                            <li><a href="">FAQ</a></li>
+                            <li><a href="/faq">FAQ</a></li>
                             <li>|</li>
                             <li><a href="/blog">Blog</a></li>
                             <li>|</li>

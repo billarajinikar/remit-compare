@@ -9,7 +9,7 @@
                     <div class="content">
                         <h3 class="subtitle">How Can We Help?</h3>
                         <h2 class="title"> Frequently Asked Questions</h2>
-                        <p class="text">Everything you need to know about nrily</p>
+                        <p class="text">Everything you need to know about Pravasify</p>
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -19,13 +19,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <img src="/assets/template-img/faq-icon.png" alt="" class="icon">
-                                    What does nrily.com do?
+                                    What does pravasify.com do?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    NRIly is a remittance comparison platform that helps users find the best money transfer services from Sweden (and soon other countries) to India. We compare exchange rates, transfer fees, and estimated delivery times to help you save money.
+                                    Pravasify is a remittance comparison platform that helps users find the best money transfer services from Sweden (and soon other countries) to India. We compare exchange rates, transfer fees, and estimated delivery times to help you save money.
                                 </div>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    The rates and fees displayed on nrily.com are updated frequently, but they may differ slightly from the final rate offered by the provider at the time of your transaction. Always confirm the exact rate on the provider's official website before completing a transfer.
+                                    The rates and fees displayed on Pravasify.com are updated frequently, but they may differ slightly from the final rate offered by the provider at the time of your transaction. Always confirm the exact rate on the provider's official website before completing a transfer.
                                 </div>
                             </div>
                         </div>
@@ -49,13 +49,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <img src="/assets/template-img/faq-icon.png" alt="" class="icon">
-                                    Does nrily charge any fees for using the comparison service?
+                                    Does Pravasify charge any fees for using the comparison service?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    No, nrily.com is completely free to use. We do not charge any fees. Some of the links on our website may be affiliate links, which means we may earn a small commission if you choose a provider through our site — at no extra cost to you.
+                                    No, Pravasify.com is completely free to use. We do not charge any fees. Some of the links on our website may be affiliate links, which means we may earn a small commission if you choose a provider through our site — at no extra cost to you.
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <img src="/assets/template-img/faq-icon.png" alt="" class="icon">
-                                    Is it safe to use nrily to compare money transfer services?
+                                    Is it safe to use Pravasify to compare money transfer services?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
@@ -85,7 +85,7 @@
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Exchange rates and fees may fluctuate between the time you view them on nrily and when you complete the transfer. Also, additional fees may apply depending on the payment method or receiving bank. Always check final amounts with the provider before confirming.
+                                    Exchange rates and fees may fluctuate between the time you view them on Pravasify and when you complete the transfer. Also, additional fees may apply depending on the payment method or receiving bank. Always check final amounts with the provider before confirming.
                                 </div>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     <img src="/assets/template-img/faq-icon.png" alt="" class="icon">
-                                    Can I use nrily.com to compare other services too?
+                                    Can I use Pravasify.com to compare other services too?
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"

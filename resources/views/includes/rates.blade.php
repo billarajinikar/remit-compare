@@ -2,6 +2,22 @@
     $topProviders = ['wise']; // Add more provider names here (lowercase)
 @endphp
 <style>
+    .exchange .rate_text, .fee_text, .time_text {
+        text-align: left !important;
+        font-size: 16px !important;
+        color: #292669;
+
+    }
+    .rate_number,
+    .fee_number,
+    .time_number {
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+    .payment_option_text {
+        font-size: 12px;
+        text-align: left;
+    }
     .skeleton-box {
         background-color: #f8f9fa;
         border: 1px solid #e0e0e0;
@@ -38,6 +54,17 @@
         background-size: 200% 100%;
         animation: shimmer 1.2s infinite;
     }
+    .provaider .provaider-box .content .pament-box {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+    .provaider .provaider-box {
+        padding: 30px !important;
+    }
+
+
+
 
     @keyframes shimmer {
         0% {
@@ -48,6 +75,85 @@
             background-position: 200% 0;
         }
     }
+
+    @media (max-width: 768px) {
+    .provaider .provaider-box {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .provaider .provaider-box .rating,
+    .provaider .provaider-box .content,
+    .provaider .provaider-box .total {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .provaider .provaider-box .content .pament-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .provaider .exchange {
+        font-size: 12px;
+        text-align: left;
+    }
+    .exchange .rate_text, .fee_text, .time_text {
+        font-size: 12px !important;
+        text-align: left !important;
+    }
+    .rate_number,
+    .fee_number,
+    .time_number {
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+    .provaider .provaider-box .content .pament-box .pament,
+    .provaider .provaider-box .content .pament-box .exchange {
+        margin: 10px 0;
+    }
+
+    .provaider .provaider-box .total {
+        padding: 10px 0 0;
+    }
+
+    .provaider .provaider-box .total a.button {
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+        margin: 15px 0 0;
+    }
+
+    .provaider .provaider-box .content .pament-box:after,
+    .provaider .provaider-box .content .pament-box .pament:after {
+        display: none;
+    }
+
+    .provaider .provaider-box .rating .partner-img {
+        margin: 0 auto;
+    }
+    .provaider .provaider-box .content .free-transfer {
+    display: flex;
+    justify-content: flex-start;
+
+    padding: 0px 0px 0px;
+}
+    .provaider .provaider-box .content .pament-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 0px 10px 0px !important;
+    }
+    .provaider .provaider-box .content .pament-box {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: start !important
+    padding: 15px 15px 15px !important;
+    position: relative;
+}
+}
+
 </style>
 
 <div class="container secure-badge">
@@ -130,22 +236,24 @@
                         </div>
                         <div class="rating" style="background: url('/assets/template-img/partner-bg.png');">
                             <div class="partner-img">
-                                <img src="/assets/providers/{{ $rate->provider->main_logo }}" alt="">
+                                <a href="{{ $rate->provider->affiliate_url }}" >
+                                    <img src="/assets/providers/{{ $rate->provider->main_logo }}" alt="">
+                                </a>
                             </div>
 
                         </div>
                         <div class="content">
                             <div class="pament-box">
                                 <div class="pament">
-                                    <p class="text">Payment Options</p>
+                                    <p class="text">Payment Options:</p>
                                     <div class="cradit-card">
-                                        <p class="text"> <span>{!! $rate->provider->payment_options !!}</span></p>
+                                        <p class="payment_option_text"> <span>{!! $rate->provider->payment_options !!}</span></p>
                                     </div>
                                 </div>
                                 <div class="exchange">
-                                    <p class="text">Exchange rate: <span>₹ {{ number_format($rate->rate, 4) }}</span></p>
-                                    <p class="text">Transfer fees: <span>{{ number_format($rate->fee, 2) }} SEK</span></p>
-                                    <p class="text">Transfer time: <span>Immediately</span></p>
+                                    <p class="rate_text">Exchange Rate: <span class="rate_number">₹ {{ number_format($rate->rate, 2) }}</span></p>
+                                    <p class="fee_text">Transfer Fee: <span class="fee_number">{{ number_format($rate->fee, 2) }} SEK</span></p>
+                                    <p class="time_text">Arrival Time: <span class="time_number">Immediately</span></p>
                                 </div>
                             </div>
 
@@ -154,10 +262,10 @@
                             </div>
                         </div>
                         <div class="total">
-                            <p class="text">Total:</p>
+                            <p class="text">You may get:</p>
                             <h4 class="amount">₹{{ number_format($rate->received_amount, 2) }}</h4>
-                            <p class="text">Included fees</p>
-                            <a href="{{ $rate->provider->affiliate_url }}" class="button button-1">Go to site</a>
+                            <!-- <p class="text">Included fees</p> -->
+                            <a href="{{ $rate->provider->affiliate_url }}" class="button button-1">Go to {{ $rate->provider->name }}</a>
                         </div>
                     </div>
                 @endforeach

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container my-5">
     <h1 class="mb-4">Privacy Policy</h1>
-    <p>Your privacy is important to us. This Privacy Policy outlines how we collect, use, and protect your information when you visit nrily.com.</p>
+    <p>Your privacy is important to us. This Privacy Policy outlines how we collect, use, and protect your information when you visit Pravasify.com.</p>
 
     <h4>1. Information We Collect</h4>
     <ul>
@@ -29,7 +29,7 @@
     <p>We may use cookies to enhance your browsing experience. You can choose to disable cookies in your browser settings.</p>
 
     <h4>6. Your Rights</h4>
-    <p>You may request access, correction, or deletion of your personal data at any time by contacting us at <strong>hello@nrily.com</strong>.</p>
+    <p>You may request access, correction, or deletion of your personal data at any time by contacting us at <strong>hello@pravasify.com</strong>.</p>
 
     <h4>7. Changes to this Policy</h4>
     <p>We may update this policy from time to time. All changes will be posted on this page.</p>

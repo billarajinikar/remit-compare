@@ -3,10 +3,10 @@
 @section('content')
 <div class="container my-5">
     <h1 class="mb-4">Terms & Conditions</h1>
-    <p>Welcome to nrily.com. By accessing or using our website, you agree to be bound by the following Terms and Conditions. Please read them carefully.</p>
+    <p>Welcome to Pravasify.com. By accessing or using our website, you agree to be bound by the following Terms and Conditions. Please read them carefully.</p>
 
     <h4>1. Purpose of Service</h4>
-    <p>nrily.com provides a platform to compare remittance providers based on exchange rates, fees, transfer times, and estimated delivery amounts. These estimates are based on publicly available data and may not reflect real-time values.</p>
+    <p>Pravasify.com provides a platform to compare remittance providers based on exchange rates, fees, transfer times, and estimated delivery amounts. These estimates are based on publicly available data and may not reflect real-time values.</p>
 
     <h4>2. No Financial Advice</h4>
     <p>The information provided is for general information only. We are not a financial institution and do not offer financial or investment advice.</p>

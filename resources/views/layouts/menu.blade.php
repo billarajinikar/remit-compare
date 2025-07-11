@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg  custom-navbar">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/assets/template-img/logo.png" class="logo" alt="logo" style="height: 50px; width:auto">
+                <img src="/assets/template-img/pravasify_logo1.png" class="logo" alt="logo" style="height: 50px; width:auto">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
