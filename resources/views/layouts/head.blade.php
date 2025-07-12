@@ -2,6 +2,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Pravasify - Compare best SEK TO INR Money transfer services - best remittance compare</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
