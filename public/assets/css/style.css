@@ -1503,8 +1503,8 @@ p.text {
   border-radius: 10px;
   background-color: #ffb400;
   box-shadow: 0px 5px 13.28px 2.72px rgba(0, 0, 0, 0.1);
-  width: 120px;
-  height: 40px;
+  width: 180px;
+  height:60px;
   font-size: 14px;
   color: white;
   font-weight: 700;
@@ -1514,6 +1514,8 @@ p.text {
   border: none;
   margin: 23px auto 0 auto;
   transition: 0.1s;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .provaider .provaider-box .total a.button:hover {
   background-color: #f5ae08;

@@ -10,7 +10,7 @@
         content="SEK to INR, Money Transfer, Remittance Comparison, NRIs in Sweden, Pravasify, Send Money to India, Remit India">
     <meta name="author" content="Pravasify">
     <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
     <!--=== Reset Css ===-->
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <!--=== Bootstrap ===-->

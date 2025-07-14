@@ -13,11 +13,11 @@
 .text {
     font-size: 20px;
     font-weight: 600;
-    color: #000 !important;
+    color: #524f98 !important;
     margin-bottom: 10px;
 }
 .title{
-    color: #000 !important;
+    color: #292669 !important;
 }
 #rates-results {
     transition: opacity 0.3s ease;
