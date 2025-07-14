@@ -17,7 +17,7 @@
                                     <img src="/assets/template-img/mail.png" alt="" class="pic">
                                 </div>
                                 <p class="text">mail</p>
-                                <span>hello@nrily.com</span>
+                                <span>hello@pravasify.com</span>
                             </div>
 
                         </div>

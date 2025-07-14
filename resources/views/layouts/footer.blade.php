@@ -52,16 +52,16 @@
                 </div>
                 <div class="col-md-6">
                     <div class="footer-bottom">
-                        <p class="text">Copyright &copy; <a href="/">Nrily</a> | 2025 </p>
+                        <p class="text">Copyright &copy; <a href="/">Pravsify</a> | 2025 </p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="footer-bottom">
                         <div class="social-style">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-skype"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61578569423364"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/pravasify"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/pravasify"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/@pravasify"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>

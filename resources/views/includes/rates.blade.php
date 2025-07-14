@@ -263,7 +263,8 @@
                         </div>
                         <div class="total">
                             <p class="text">You may get:</p>
-                            <h4 class="amount">₹{{ number_format($rate->received_amount, 2) }}</h4>
+                            <h4 class="amount">₹{{ number_format($rate->received_amount, 0, ',', '') }}</h4>
+                            <h6 class="amount">For {{ number_format($rate->base_amount, 0, ',', ' ') }} SEK</h6>
                             <!-- <p class="text">Included fees</p> -->
                             <a href="{{ $rate->provider->affiliate_url }}" class="button button-1">Go to {{ $rate->provider->name }}</a>
                         </div>
