@@ -17,8 +17,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         // Example: schedule Monito fetch command
-        //$schedule->command('monito:refresh-rates')->cron(expression: '0 */5 * * *');
-        $schedule->command('monito:refresh-rates')->everyFiveMinutes();
+        $schedule->command('monito:refresh-rates')->cron(expression: '0 */5 * * *');
+        //$schedule->command('monito:refresh-rates')->everyFiveMinutes();
     }
 
 
