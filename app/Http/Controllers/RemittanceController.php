@@ -25,6 +25,7 @@ class RemittanceController extends Controller
 
     // Step 1: Get the closest base_amount stored
     $closestBaseAmount = RemittanceRate::select('base_amount')
+
         ->distinct()
         ->orderByRaw("ABS(base_amount - ?)", [$amount])
         ->limit(1)
@@ -37,7 +38,9 @@ class RemittanceController extends Controller
     // Step 2: Fetch all rates for that closest base_amount
     $baseRates = RemittanceRate::with('provider')
         ->where('base_amount', $closestBaseAmount)
-        ->where('status', 1)
+        ->whereHas('provider', function ($query) {
+                    $query->where('status', 1);
+                })
         ->orderByDesc('received_amount')
         ->get();
 
