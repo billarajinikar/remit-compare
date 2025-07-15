@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="banner contact">
+    <div class="banner contact" >
         <div class="hero-area">
             <div class="container">
                 <div class="row">

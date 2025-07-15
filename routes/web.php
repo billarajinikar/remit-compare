@@ -29,4 +29,4 @@ Route::get('/remittance', [RemittanceController::class, 'index'])->name('remitta
 Route::get('/remittance/search', [RemittanceController::class, 'search'])->name('remittance.search');
 
 Route::view('/blog', 'pages.blog')->name('blog');
-
+Route::view('/blog/top-5-money-transfer-services-from-Sweden-SEK-to-India-INR', 'blogs.top-5-remittance-services')->name('top-5-remittance-services');
