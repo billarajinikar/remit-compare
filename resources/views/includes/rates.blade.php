@@ -225,7 +225,7 @@
             <div class="col-12">
                 <div class="provaider-match">
                     <p class="text one">{{ $rates->count() }} Providers Matched </p>
-                    <p class="text two">Rates updated less than 11 mins ago</p>
+                    <p class="text two">Rates updated less than 18 mins ago</p>
                 </div>
                 @foreach ($rates as $rate)
                     <div class="provaider-box">

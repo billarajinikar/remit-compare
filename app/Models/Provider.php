@@ -19,6 +19,12 @@ class Provider extends Model
 
     public $timestamps = true;
 
+    // Scope for active providers
+    public function scopeActive($query)
+    {
+        return $query->where('status', 1);
+    }
+
     // Relationship: One provider has many remittance rates
     public function remittanceRates()
     {

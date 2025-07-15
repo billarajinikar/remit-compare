@@ -9,7 +9,13 @@ class RemittanceController extends Controller
 {
     public function index()
     {
-        $rates = RemittanceRate::with('provider')->where('base_amount', 1000)->orderByDesc('received_amount')->get();
+        $rates = RemittanceRate::with(relations: 'provider')
+            ->where('base_amount', 1000)
+            ->whereHas('provider', function ($query) {
+                    $query->where('status', 1);
+                })
+            ->orderByDesc('received_amount')
+            ->get();
         return view('remittance.index', compact('rates'));
     }
 
