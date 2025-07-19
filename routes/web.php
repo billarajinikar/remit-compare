@@ -31,3 +31,4 @@ Route::get('/remittance/search', [RemittanceController::class, 'search'])->name(
 Route::view('/blog', 'pages.blog')->name('blog');
 Route::view('/blog/top-5-money-transfer-services-from-Sweden-SEK-to-India-INR', 'blogs.top-5-remittance-services')->name('top-5-remittance-services');
 Route::view('/blog/How-NRIs-in-Sweden-Can-Build-a-Solid-Financial-Future-in-India', 'blogs.NRIs-in-Sweden')->name('NRIs-in-Sweden');
+Route::view('/blog/A-Smart-NRIs-Guide-to-Saving-Money-While-Living-in-Sweden', 'blogs.A-Smart-NRIs-Guide')->name('A-Smart-NRIs-Guide');
